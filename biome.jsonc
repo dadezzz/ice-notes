@@ -1,0 +1,26 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.2.4/schema.json",
+
+  // Biome can't parse astro files.
+  "files": {
+    "includes": ["**/*", "!**/*.astro"],
+  },
+
+  // We use prettier for formatting until biome starts to fully support yaml and
+  // astro files.
+  "formatter": { "enabled": false },
+
+  "linter": {
+    "domains": {
+      "project": "recommended",
+    },
+  },
+
+  // We need to set every ignored file in the root .gititgnore or extend this
+  // configuration with a biome.jsonc file inside every package.
+  "vcs": {
+    "clientKind": "git",
+    "enabled": true,
+    "useIgnoreFile": true,
+  },
+}

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "assignees": ["davide"],
+  "extends": [
+    "config:best-practices",
+    "customManagers:biomeVersions",
+    "customManagers:dockerfileVersions",
+    "customManagers:githubActionsVersions",
+    ":maintainLockFilesWeekly",
+    ":semanticCommits"
+  ],
+  "packageRules": [
+    {
+      "automerge": true,
+      "matchFileNames": [".devcontainer/**", ".forgejo/**"]
+    },
+    {
+      "automerge": true,
+      "matchPackageNames": [
+        "@biomejs/biome",
+        "@types/*",
+        "pnpm",
+        "prettier*",
+        "vitest"
+      ]
+    }
+  ]
+}

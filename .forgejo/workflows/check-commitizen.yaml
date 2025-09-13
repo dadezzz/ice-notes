@@ -1,0 +1,17 @@
+concurrency:
+  cancel-in-progress: true
+  group: ${{ forge.ref }}-${{ forge.job }}
+
+jobs:
+  check-commitizen:
+    runs-on: srv-generic-amd64
+    steps:
+      - run: cz check --message '${{ forge.event.pull_request.title }}'
+
+"on":
+  pull_request:
+    branches:
+      - main
+    types:
+      - opened
+      - edited
