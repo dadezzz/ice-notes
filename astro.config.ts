@@ -21,10 +21,14 @@ export default defineConfig({
         },
       ],
       title: "ICE notes",
+      logo: {
+        src: "./public/favicon.svg",
+      },
     }),
   ],
   markdown: {
     rehypePlugins: [rehypeKatex],
     remarkPlugins: [remarkMath],
   },
+  site: "https://ice-notes.zarantonello.dev",
 });
