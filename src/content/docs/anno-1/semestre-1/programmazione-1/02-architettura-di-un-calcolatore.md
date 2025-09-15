@@ -19,7 +19,7 @@ quello sotto.
 Macchina di Von Neumann: componenti del calcolatore comunicano attraverso un bus
 di sistema. È l'architettura più diffusa al giorno d'oggi.
 
-```none
+```text
  ----------bus di sistema---------
  |     |         |               |
 CPU   RAM   periferiche   memoria di massa

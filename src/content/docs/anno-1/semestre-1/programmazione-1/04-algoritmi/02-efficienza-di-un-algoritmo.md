@@ -37,12 +37,12 @@ $n$ è detta taglia di un problema e il suo significato può variare:
 ## Notazioni della velocità di algoritmo
 
 - La notazione $O$ fornisce un limite superiore ad una funzione (dato un
-  algoritmo con complessità $f(n)$, esso non può essere più lento di $O(n)$ a
-  per un numero di elementi abbastanza grande).
-- Analogamente la notazione $Ω$ definisce un limite inferiore di $f(n)$, ovvero
-  un algoritmo non può eseguire meno operazioni di $Ω(n)$.
-- Con la notazione $Θ$ si indica che $f(n)$ è compresa tra 2 funzioni $c1​Θ(n)$
-  e $c2​Θ(n)$.
+  algoritmo con complessità $f(n)$, esso non può essere più lento di $O(n)$ per
+  un numero di elementi abbastanza grande).
+- Analogamente la notazione $\Omega$ definisce un limite inferiore di $f(n)$,
+  ovvero un algoritmo non può eseguire meno operazioni di $\Omega(n)$.
+- Con la notazione $\Theta$ si indica che $f(n)$ è compresa tra 2 funzioni
+  $c_1\ g(n) < f(n) < c_2\ g(n)$.
 
 ## Dimensione massima dell'input
 

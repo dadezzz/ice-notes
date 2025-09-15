@@ -8,7 +8,7 @@ sul nodo corrente rispetto ai figli:
 
 - pre-ordine:
 
-  ```none
+  ```text
   operazione()
   nodosx()
   nododx()
@@ -16,7 +16,7 @@ sul nodo corrente rispetto ai figli:
 
 - post-ordine:
 
-  ```none
+  ```text
   nodosx()
   nododx()
   operazione()
@@ -24,7 +24,7 @@ sul nodo corrente rispetto ai figli:
 
 - in-ordine:
 
-  ```none
+  ```text
   nodosx()
   operazione()
   nododx()

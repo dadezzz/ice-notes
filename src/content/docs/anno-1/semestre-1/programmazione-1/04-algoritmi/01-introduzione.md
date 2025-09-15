@@ -26,7 +26,7 @@ fino ad arrivare a quelle specifiche.
 
 ## Somma con un abaco
 
-```none
+```text
 a = 4
 OOOO---OOOOOOOOOO
 b = 7
