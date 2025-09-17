@@ -12,4 +12,4 @@ FROM docker.io/library/caddy:2.10.2-alpine
 
 COPY --from=builder /srv/dist /srv
 
-ENTRYPOINT ["caddy", "file-server", "--root=/srv", "--listen=[::]:3000"]
+ENTRYPOINT ["caddy", "file-server", "--root=/srv"]

@@ -14,14 +14,16 @@ spec:
         apps.zarantonello.dev/namespace: ice-notes
     spec:
       containers:
-        - image: git.zarantonello.dev/davide/ice-notes:v1.0.0
+        - image: git.zarantonello.dev/davide/ice-notes:v1.0.1
           name: ice-notes
           ports:
-            - containerPort: 3000
+            - containerPort: 80
               name: http
           securityContext:
             allowPrivilegeEscalation: false
             capabilities:
+              add:
+                - NET_BIND_SERVICE
               drop:
                 - ALL
             readOnlyRootFilesystem: true
