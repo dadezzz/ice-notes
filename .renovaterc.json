@@ -12,16 +12,16 @@
   "packageRules": [
     {
       "automerge": true,
-      "matchFileNames": [".devcontainer/**", ".forgejo/**"]
+      "matchFileNames": [".devcontainer/**", ".forgejo/**"],
+      "matchUpdateTypes": ["digest", "minor", "patch", "pin"]
     },
     {
       "automerge": true,
       "matchPackageNames": [
+        "@astro/check",
         "@biomejs/biome",
-        "@types/*",
-        "pnpm",
         "prettier*",
-        "vitest"
+        "wrangler"
       ]
     }
   ]

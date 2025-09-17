@@ -2,7 +2,7 @@
 title: Sintassi
 ---
 
-# Caratteristiche generali
+## Caratteristiche generali
 
 - C è un linguaggio case sensitive, distingue maiuscole e minuscole.
 - Tutti i caratteri di spaziamento sono ignorati.
@@ -10,7 +10,7 @@ title: Sintassi
   - `/* commento */`: commenti multilineari;
   - `// commento`: commenti su una singola linea (a partire da C99);
 
-# Elementi del linguaggio
+## Elementi del linguaggio
 
 - **keywords**: parole riservate dal linguaggio, usate per definire le
   operazioni di base del programma (if, for, while, ...);
@@ -18,7 +18,7 @@ title: Sintassi
   (variabili, funzioni, tipi). Un identificatore non può avere un nome che fa
   parte delle keywords.
 
-## Regole di nomenclatura degli identificatori
+### Regole di nomenclatura degli identificatori
 
 Un identificatore può assumere un nome qualsiasi (eccetto quelli riservati dalle
 parole chiave), ma deve seguire alcune regole:
@@ -27,7 +27,9 @@ parole chiave), ma deve seguire alcune regole:
 - Il primo carattere non può essere una cifra.
 - Lettere maiuscole e minuscole creano identificatori diversi.
 
-:::tip Alcune buone pratiche:
+:::tip
+
+Alcune buone pratiche:
 
 - Evitare di utilizzare lo stesso identificatore per variabili diverse o di
   usare
@@ -42,7 +44,7 @@ parole chiave), ma deve seguire alcune regole:
 
 :::
 
-# Istruzione composta
+## Istruzione composta
 
 Tutte le istruzioni raggruppate all'interno di 2 `{}` sono semanticamente
 equivalenti ad una singola istruzione.

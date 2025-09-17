@@ -2,7 +2,7 @@
 title: Efficienza di un algoritmo
 ---
 
-# Tempo di esecuzione di un algoritmo ($T(n)$)
+## Tempo di esecuzione di un algoritmo ($T(n)$)
 
 Un qualsiasi algoritmo può avere un tempo di esecuzione variabile a seconda del
 numero di elementi che deve processare (questo numero è detto `n` o 'taglia').
@@ -14,7 +14,7 @@ Il tempo di esecuzione si esprime generalmente per $n$ tendente ad infinito,
 quindi gli algoritmi a crescita lenta o con tempo di esecuzione costate saranno
 i più veloci.
 
-## Casi dove considerare la velocità
+### Casi dove considerare la velocità
 
 La complessità di un dato algoritmo si esprime in 3 casi:
 
@@ -26,7 +26,7 @@ La complessità di un dato algoritmo si esprime in 3 casi:
 - **caso migliore**: tipologia di input per cui l'algoritmo esegue meno
   operazioni.
 
-## Taglia di un problema
+### Taglia di un problema
 
 $n$ è detta taglia di un problema e il suo significato può variare:
 
@@ -34,7 +34,7 @@ $n$ è detta taglia di un problema e il suo significato può variare:
 - algoritmo di gestione di dati: quantità di dati da processare;
 - algoritmo sui grafi: numero di nodi e archi;
 
-## Notazioni della velocità di algoritmo
+### Notazioni della velocità di algoritmo
 
 - La notazione $O$ fornisce un limite superiore ad una funzione (dato un
   algoritmo con complessità $f(n)$, esso non può essere più lento di $O(n)$ per
@@ -44,7 +44,7 @@ $n$ è detta taglia di un problema e il suo significato può variare:
 - Con la notazione $\Theta$ si indica che $f(n)$ è compresa tra 2 funzioni
   $c_1\ g(n) < f(n) < c_2\ g(n)$.
 
-## Dimensione massima dell'input
+### Dimensione massima dell'input
 
 Per fissare una quantità di tempo massima ($t$) in cui l'algoritmo deve finire
 devo stabilire quanto è veloce il computer su cui esso viene eseguito.

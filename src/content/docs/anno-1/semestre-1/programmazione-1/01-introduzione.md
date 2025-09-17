@@ -1,8 +1,9 @@
 ---
+prev: false
 title: Introduzione
 ---
 
-# Definizione di informatica
+## Definizione di informatica
 
 - Association for Computing Machinery:
 
@@ -16,7 +17,7 @@ title: Introduzione
 
 Entrambe le definizioni non implicano l'uso di un calcolatore.
 
-# Turing completeness
+## Turing completeness
 
 Si dice "Turing complete" qualsiasi linguaggio che ha:
 

@@ -11,7 +11,7 @@ controllano come il testo viene interpretato: `\n`, `\t`, ...
 Le stringhe in C rappresentano un array di caratteri. L'ultimo elemento di
 questo array deve essere il carattere `\0`.
 
-# Inizializzazione
+## Inizializzazione
 
 Oltre alla normale forma di inizializzazione di un array, una stringa può essere
 dichiarata con una sintassi speciale:
@@ -23,7 +23,7 @@ const char[] a = "ciao!";
 const char[] a = { 'c', 'i', 'a', 'o', '\0' };
 ```
 
-# Stampa e lettura di una stringa
+## Stampa e lettura di una stringa
 
 `scanf()` può leggere una stringa da `stdin` a patto che essa non sia più lunga
 della memoria allocata.
@@ -44,7 +44,7 @@ const char[] a = "ciao!";
 prinf("%s\n", a);
 ```
 
-# Sequenze di caratteri nelle stringhe
+## Sequenze di caratteri nelle stringhe
 
 - `\n`: newline;
 - `\t`: tab;
@@ -53,6 +53,6 @@ prinf("%s\n", a);
   continuare a leggere il resto della stringa);
 - `\\`: inserisce una \\;
 
-# Funzioni di libreria
+## Funzioni di libreria
 
 Alcune funzioni utili per manipolare le stringhe sono definite in `<string.h>`.

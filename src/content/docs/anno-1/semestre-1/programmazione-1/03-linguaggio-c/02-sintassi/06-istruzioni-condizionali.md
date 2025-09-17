@@ -2,7 +2,7 @@
 title: Istruzioni condizionali
 ---
 
-# `if`
+## `if`
 
 Analizza una condizione e se vera, esegue il codice all'interno del blocco.
 
@@ -28,7 +28,7 @@ int main() {
 }
 ```
 
-# `switch`
+## `switch`
 
 ```c
 switch (espressione) {
@@ -67,7 +67,7 @@ switch (espressione) {
 }
 ```
 
-# Operatore ternario
+## Operatore ternario
 
 `condizione ? e1 : e2`: se la condizione è vera, dà come risultato e1, sennò e2.
 

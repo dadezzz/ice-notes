@@ -12,7 +12,7 @@ l'insertion sort) non possono avere prestazioni migliori di $O(N^{2})$.
 
 I metodi di ordinamento per confronti hanno una velocità $O(n \ log(n))$
 
-# Insertion sort
+## Insertion sort
 
 ```c
 void insertion_sort(int array[], int array_lenght) {
@@ -35,7 +35,7 @@ void insertion_sort(int array[], int array_lenght) {
 
 La complessità nel caso medio e nel caso peggiore è $\Theta(n^{2})$.
 
-# Merge sort
+## Merge sort
 
 ```c
 void merge_sort(int array[], int array_lenght) {

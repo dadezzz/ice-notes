@@ -2,7 +2,7 @@
 title: Architettura di un calcolatore
 ---
 
-# Livelli di astrazione di un calcolatore
+## Livelli di astrazione di un calcolatore
 
 Un computer è composto da diversi livelli di astrazione:
 
@@ -14,7 +14,7 @@ Un computer è composto da diversi livelli di astrazione:
 Per ogni livello c'è un interfaccia sempre più astratta per comunicare con
 quello sotto.
 
-# Hardware
+## Hardware
 
 Macchina di Von Neumann: componenti del calcolatore comunicano attraverso un bus
 di sistema. È l'architettura più diffusa al giorno d'oggi.
@@ -31,7 +31,7 @@ CPU   RAM   periferiche   memoria di massa
 - **memoria di massa**: memorizza dati in maniera persistente;
 - **periferiche**: mouse, tastiera, schermo, …;
 
-# CPU
+## CPU
 
 La velocità di un processore è determinata dal numero di transistors e da quante
 istruzioni al secondo riesce a completare.
@@ -39,7 +39,7 @@ istruzioni al secondo riesce a completare.
 - **Legge di Moore**: ogni 18 mesi la dimensione di un transistor si dimezza.
 - **Clock speed**: rimasta circa la stessa dall'inizio degli anni 2000.
 
-## Fetch, decode, execute
+### Fetch, decode, execute
 
 La CPU esegue sempre lo stesso ciclo:
 
@@ -52,7 +52,7 @@ Il suo lavoro è regolato da un clock, più è elevata la frequenza, più
 
 Le fasi di elaborazione si susseguono sempre in modo sequenziale.
 
-# RAM
+## RAM
 
 La RAM, o memoria centrale, è un tipo di memoria non persistente, ad ogni avvio
 i suoi contenuti si resettano e assumono valori casuali.
@@ -64,7 +64,7 @@ Si chiama RAM (Random Access Memory) perché è possibile accedere a qualsiasi
 elemento nella stessa quantità di tempo indipendentemente dalla posizione in cui
 esso si trova.
 
-## Rappresentazione dei dati
+### Rappresentazione dei dati
 
 La RAM è composta da una sequenza di celle, ognuna delle quali contiene una
 parola (word). La grandezza di una word dipende dal processore (32/64 bit).

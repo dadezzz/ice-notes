@@ -5,9 +5,7 @@ title: Introduzione
 Sono dei contenitori che permettono delle operazioni su insiemi di contenuti di
 un tipo dato.
 
-##
-
-### Struttura generale di una lista
+## Liste
 
 ### Inizializzazione di una lista
 

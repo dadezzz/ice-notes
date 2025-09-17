@@ -22,7 +22,7 @@ a[1] = 5;
 a[sizeof(a) / sizeof(int) - 1] = 10;
 ```
 
-# Dichiarazione
+## Dichiarazione
 
 Il primo modo di dichiarare una variabile array è:
 
@@ -33,7 +33,7 @@ int a[100];
 Esso riserva uno spazio in memoria che può contenere 100 valori di tipo `int`.
 Gli indici degli elementi vanno da 0 a 99.
 
-# Inizializzazione
+## Inizializzazione
 
 Un array può anche essere inizializzato durante la sua dichiarazione.
 
@@ -41,7 +41,7 @@ Un array può anche essere inizializzato durante la sua dichiarazione.
 int a = { 2, 4, 5, 7, 3 };
 ```
 
-# Array di dimensione dinamica
+## Array di dimensione dinamica
 
 Il compilatore non ha bisogno di conoscere le dimensioni di un array durante la
 compilazione:
@@ -56,7 +56,7 @@ int a[size];
 Per modificare le dimensioni di un array già esistente è necessario usare
 l'allocazione dinamica della memoria con `malloc()` e `free()`.
 
-# Array multidimensionali
+## Array multidimensionali
 
 Un array multidimensionale è un array che contiene una serie di altri array. Può
 essere dichiarato così:

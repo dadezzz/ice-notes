@@ -10,7 +10,7 @@ seguente (o anche precedente) dell'insieme.
 - **Coda**: struttura dove il primo elemento inserito è il primo ad essere
   rimosso.
 
-# Vantaggi e svantaggi
+## Vantaggi e svantaggi
 
 Uno svantaggio degli array è che è difficile trovare una regione libera di
 memoria per immagazzinare grandi dimensioni di dati. Le liste risolvono questo
@@ -27,13 +27,13 @@ scorrere attraverso tutti i precedenti.
 Serve un caso speciale per rappresentare una lista vuota e un valore speciale
 che rappresenta la fine della lista.
 
-# Liste semplicemente concatenate
+## Liste semplicemente concatenate
 
 Contengono informazioni solo sulla posizione dell'elemento successivo (a
 differenza di quelle che conoscono anche la posizione dell'elemento precedente).
 In queste liste è possibile scorrere solo in avanti.
 
-## Struttura generale di una lista
+### Struttura generale di una lista
 
 ```c
 typedef struct ListNode {
@@ -48,7 +48,7 @@ Il campo `next` contiene un puntatore all'indirizzo del prossimo elemento della
 lista. Se `next` è l'ultimo elemento della lista, allora il suo valore sarà
 `NULL`.
 
-# Implementazione di una lista
+## Implementazione di una lista
 
 ```c
 typedef struct ListNode {

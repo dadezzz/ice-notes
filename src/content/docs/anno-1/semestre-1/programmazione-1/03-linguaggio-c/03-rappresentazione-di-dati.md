@@ -11,9 +11,9 @@ un certo indirizzo e anche le dimensioni di quella sequenza.
 Ogni linguaggio di programmazione offre dei tipi predefiniti e la possibilità di
 creare tipi composti a partire da essi.
 
-# Tipi semplici
+## Tipi semplici
 
-## Numeri interi
+### Numeri interi
 
 Sono sequenze finite di byte.
 
@@ -37,7 +37,7 @@ Modi di rappresentare il segno:
   Con questa tecnica non c'è bisogno di implementare circuiti apposta, le
   operazioni tra numeri negativi e positivi vengono giuste in qualsiasi caso.
 
-### `int`
+#### `int`
 
 Rappresentano numeri positivi o negativi interi.
 
@@ -70,7 +70,7 @@ crescente di grandezza:
 - `int`
 - `long`
 
-### `char` (caratteri ascii)
+#### `char` (caratteri ascii)
 
 Rappresentano i caratteri della tabella ASCII.
 
@@ -78,7 +78,7 @@ Sono praticamente interi e condividono tutte le loro proprietà.
 
 Anche un `char` può essere `signed` o `unsigned`.
 
-## Numeri frazionari
+### Numeri frazionari
 
 I numeri con una parte decimale sono codificati diversamente dai numeri interi
 in 2 modi:
@@ -96,7 +96,7 @@ sinistra a destra):
 Il numero si ottiene calcolando $\pm 2^{x} m$. La mantissa rappresenta le cifre
 significative, l'esponente indica dove mettere la virgola.
 
-### `float` e `double`
+#### `float` e `double`
 
 Rappresentano numeri frazionari, la precisione è data da un numero massimo di
 cifre significative.
@@ -110,13 +110,15 @@ I `double` hanno una precisione maggiore di un `float`.
 Per codificare questi numeri dalla forma decimale a quella binaria si usa lo
 standard IEEE-754.
 
-:::info Per confrontare 2 `float` non si può usare l'operatore `==`, infatti,
-vista la loro imprecisione, il risultato potrebbe essere falso anche se i 2
-numeri sono praticamente identici.
+:::note
+
+Per confrontare 2 `float` non si può usare l'operatore `==`, infatti, vista la
+loro imprecisione, il risultato potrebbe essere falso anche se i 2 numeri sono
+praticamente identici.
 
 :::
 
-# Definizione di tipi aggiuntivi
+## Definizione di tipi aggiuntivi
 
 In C ci sono 5 modi di definire altri tipi partendo da quelli elementari:
 
@@ -128,7 +130,7 @@ In C ci sono 5 modi di definire altri tipi partendo da quelli elementari:
 - `enum`: Definizione di un numero limitato di varianti.
 - `typedef`: Alias del nome di un altro tipo.
 
-## `struct`
+### `struct`
 
 Permettono di definire variabili strutturate che aggregano informazioni anche di
 tipo diverso.
@@ -156,14 +158,14 @@ int main() {
 }
 ```
 
-## `typedef`
+### `typedef`
 
 Attraverso un `typedef` è possibile definire un sinonimo di un tipo.
 
 Questo 'nuovo' tipo eredita direttamente tutte le proprietà del tipo di
 partenza.
 
-## `enum`
+### `enum`
 
 I tipi `enum` rappresentano una serie finita di varianti.
 
@@ -182,7 +184,7 @@ enum DayOfTheWeek {
 Le varianti sono rappresentate come constanti `int` con un nome, con valori che
 solitamente partono da 0.
 
-# Conversioni di tipo
+## Conversioni di tipo
 
 Durante un assegnazione, il compilatore converte automaticamente alcuni tipi
 numerici tra `int` e `float`.

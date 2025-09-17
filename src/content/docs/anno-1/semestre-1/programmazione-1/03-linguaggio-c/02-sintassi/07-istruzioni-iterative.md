@@ -4,7 +4,7 @@ title: Istruzioni iterative
 
 Ripetono un blocco di istruzioni al verificarsi di una condizione.
 
-# Ciclo `for`
+## Ciclo `for`
 
 L'intestazione di un ciclo `for` può contenere espressioni arbitrarie.
 Analogamente al ciclo `while`.
@@ -33,7 +33,7 @@ int main() {
 }
 ```
 
-# Ciclo `while {}` e `do {} while`
+## Ciclo `while {}` e `do {} while`
 
 ```c
 #include <stdio.h>
@@ -57,7 +57,7 @@ int main() {
 }
 ```
 
-# `break` e `continue` nei cicli
+## `break` e `continue` nei cicli
 
 Nei cicli `for`, `while {}`, `do {} while`:
 

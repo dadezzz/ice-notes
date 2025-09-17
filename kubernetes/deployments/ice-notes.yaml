@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ice-notes
+spec:
+  selector:
+    matchLabels:
+      apps.zarantonello.dev/name: ice-notes
+      apps.zarantonello.dev/namespace: ice-notes
+  template:
+    metadata:
+      labels:
+        apps.zarantonello.dev/name: ice-notes
+        apps.zarantonello.dev/namespace: ice-notes
+    spec:
+      containers:
+        - image: git.zarantonello.dev/davide/ice-notes/v1.0.0
+          name: ice-notes
+          ports:
+            - containerPort: 3000
+              name: http
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                - ALL
+            readOnlyRootFilesystem: true
+      enableServiceLinks: false
+      nodeSelector:
+        kubernetes.io/hostname: srv-0-fsk-hetz
+      securityContext:
+        fsGroup: 45383
+        runAsGroup: 45383
+        runAsNonRoot: true
+        runAsUser: 45383
+        seccompProfile:
+          type: RuntimeDefault

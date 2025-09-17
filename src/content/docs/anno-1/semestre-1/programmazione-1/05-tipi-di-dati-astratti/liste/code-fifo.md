@@ -8,7 +8,7 @@ rimosso.
 Una coda FIFO si distingue da una coda LIFO (stack) perché in essa si può
 accedere sia al primo che all'ultimo elemento.
 
-# Implementazione di una coda FIFO
+## Implementazione di una coda FIFO
 
 ```c
 // Tipo arbitrario, rappresenta il contenuto di ogni elemento della coda.

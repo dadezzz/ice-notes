@@ -2,12 +2,6 @@
 title: Libreria standard
 ---
 
-#
-
-###
-
-###
-
 Programma che legge 2 numeri, li moltiplica e poi stampa il risultato:
 
 ```c

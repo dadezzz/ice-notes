@@ -2,7 +2,7 @@
 title: Algoritmi di ricerca
 ---
 
-# Ricerca in un archivio ordinato
+## Ricerca in un archivio ordinato
 
 Posso cercare in 2 modi:
 
@@ -22,7 +22,7 @@ Posso cercare in 2 modi:
 
   Il caso peggiore richiede un tempo massimo pari a $log_{2}(n)$.
 
-## Implementazione di un algoritmo di ricerca binaria
+### Implementazione di un algoritmo di ricerca binaria
 
 ```c
 // Ritorna l'indice dell'elemento cercato.

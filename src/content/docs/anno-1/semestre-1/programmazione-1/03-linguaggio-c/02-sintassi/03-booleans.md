@@ -26,7 +26,7 @@ int main() {
 }
 ```
 
-# Algebra di Boole
+## Algebra di Boole
 
 Nasce dall'esigenza di stabilire se espressioni sono vere o false, in modo da
 condizionare il corso del programma.
@@ -34,7 +34,7 @@ condizionare il corso del programma.
 Nell'algebra di Boole le variabili possono assumere solo 2 valori (1|0,
 true|false).
 
-## Operazioni
+### Operazioni
 
 - NOT (`!`): inverte il valore di un espressione (operatore unario);
 - AND (`&&`): ha valore vero se entrambi gli operandi sono veri (operatore
@@ -42,7 +42,7 @@ true|false).
 - OR (`||`): ha valore vero se almeno uno degli operandi è vero (operatore
   binario);
 
-## Proprietà
+### Proprietà
 
 - commutativa:
   - `a || b` = `b || a`;
@@ -51,7 +51,7 @@ true|false).
   - `a && (b || c)` = `(a && b) || (b && c)`;
   - `a || (b && c)` = `(a || b) && (b || c)`;
 
-## Regole di precedenza
+### Regole di precedenza
 
 Dall'operatore con precedenza maggiore a quello con la minore:
 
@@ -59,7 +59,7 @@ Dall'operatore con precedenza maggiore a quello con la minore:
 2. AND
 3. OR
 
-## Vocabolario
+### Vocabolario
 
 - contraddizione: espressione sempre falsa;
 - tautologia: espressione sempre vera;

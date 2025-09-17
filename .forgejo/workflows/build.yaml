@@ -1,0 +1,19 @@
+concurrency:
+  cancel-in-progress: true
+  group: ${{ forge.ref }}-${{ forge.job }}
+
+jobs:
+  build:
+    container:
+      image: git.zarantonello.dev/infra/ci:v2.0.0
+    runs-on: srv-0-thi-home
+    steps:
+      - uses: https://data.forgejo.org/actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+      - run: docker login git.zarantonello.dev -u ${{ secrets.DOCKER_REGISTRY_USER }} -p ${{ secrets.DOCKER_REGISTRY_PASSWORD }}
+      - run: docker build --tag git.zarantonello.dev/davide/ice-notes:${{ forge.ref_name }} .
+      - run: docker push git.zarantonello.dev/davide/ice-notes:${{ forge.ref_name }}
+
+"on":
+  push:
+    tags:
+      - "*"

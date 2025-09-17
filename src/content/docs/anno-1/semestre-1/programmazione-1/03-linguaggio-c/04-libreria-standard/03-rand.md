@@ -8,7 +8,7 @@ uguali ogni volta che il programma viene riavviato.
 Per evitare ciò bisogna chiamare `srand(time(0))` all'inizio della funzione
 `main`.
 
-# Range di numeri random
+## Range di numeri random
 
 `rand()` ritorna sempre un numero compreso tra `0` e `RAND_MAX`.
 

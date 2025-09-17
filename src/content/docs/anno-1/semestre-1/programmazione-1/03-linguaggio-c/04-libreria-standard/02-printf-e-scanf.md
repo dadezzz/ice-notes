@@ -2,7 +2,7 @@
 title: printf() e scanf()
 ---
 
-# `printf(format [, arg1, arg2])`
+## `printf(format [, arg1, arg2])`
 
 Funzione che stampa in `stdout` la stringa data come primo argomento e inserendo
 i parametri dati successivamente.
@@ -22,7 +22,7 @@ int main() {
 }
 ```
 
-## Descrittori
+### Descrittori
 
 Possono essere usati nella stringa `format` per indicare come stampare le
 variabili date negli argomenti successivi.
@@ -37,7 +37,7 @@ variabili date negli argomenti successivi.
 - `%o`: numero intero in base ottale;
 - `%x`: numero intero in base esadecimale;
 
-# `scanf(format [, arg1, arg2])`
+## `scanf(format [, arg1, arg2])`
 
 Si usa per leggere input da `stdin` e convertirlo nel tipo che si specifica con
 un descrittore.
@@ -57,7 +57,7 @@ int main() {
 }
 ```
 
-## Problemi nella lettura di caratteri
+### Problemi nella lettura di caratteri
 
 `scanf` legge solo ciò che coincide con la stringa formato, quindi se si leggono
 caratteri e l'utente ne inserisce 1 e poi preme invio, in `stdin` resterà il
@@ -67,7 +67,7 @@ Dato che generalmente si vuole ignorare questo carattere, è necessario chiamare
 la funzione `fflush(stdin)` prima di `scanf`, essa elimina tutti i caratteri
 presenti in `stdin`.
 
-# Esempi
+## Esempi
 
 Programma che legge 2 numeri, li moltiplica e poi stampa il risultato:
 

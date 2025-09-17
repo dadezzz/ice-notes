@@ -1,0 +1,15 @@
+/.astro/
+/biome.jsonc
+/.devcontainer/
+/dist/
+/Dockerfile
+/.forgejo
+/.git
+/.gitignore
+/kubernetes/
+/node_modules/
+/.prettierignore
+/.prettierrc.json
+/README.md
+/.renovaterc.json
+/.yamllint.yml

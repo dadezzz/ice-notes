@@ -2,7 +2,7 @@
 title: Introduzione
 ---
 
-# Caratteristiche di un linguaggio di programmazione
+## Caratteristiche di un linguaggio di programmazione
 
 Un algoritmo espresso in linguaggio informale, va tradotto in un linguaggio che
 un computer può capire (C, C++, Java). Questa sequenza di istruzioni date al
@@ -21,7 +21,7 @@ Cosa deve fare un linguaggio di programmazione:
 - astrazione delle istruzioni;
 - astrazione del linguaggio per definire gli algoritmi;
 
-# Hello world
+## Hello world
 
 Programma basico usato per testare che il processo di compilazione funzioni.
 
@@ -37,7 +37,7 @@ int main() {
 }
 ```
 
-# Storia di C
+## Storia di C
 
 Inventato nel 1972 da Brian Kerninghan e Dennis Ritchie, evoluzione di 2
 linguaggi preesistenti (BCPL e B), sempre inventati da Ritchie.
@@ -45,7 +45,7 @@ linguaggi preesistenti (BCPL e B), sempre inventati da Ritchie.
 Nel 1989 viene creato uno standard e viene aggiornato nel 1999, 2011, 2017
 e 2023.
 
-# Confronto tra C e C++
+## Confronto tra C e C++
 
 - C:
   - Evoluzione di linguaggi preesistenti.
@@ -55,7 +55,7 @@ e 2023.
   - Fornisce astrazioni sulle strutture dati (templates).
   - È possibile usare l'OOP (object oriented programming).
 
-# Compilazione e interpretazione
+## Compilazione e interpretazione
 
 - Compilazione:
   - Il programma viene tradotto in un altro linguaggio (di solito di livello
