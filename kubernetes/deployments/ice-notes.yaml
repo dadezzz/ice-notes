@@ -29,7 +29,7 @@ spec:
             readOnlyRootFilesystem: true
       enableServiceLinks: false
       nodeSelector:
-        kubernetes.io/hostname: srv-0-thi-home
+        kubernetes.io/hostname: srv-0-fsk-hetz
       securityContext:
         fsGroup: 45383
         runAsGroup: 45383
