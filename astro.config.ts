@@ -13,6 +13,71 @@ export default defineConfig({
       editLink: {
         baseUrl: "https://git.zarantonello.dev/davide/ice-notes/_edit/main",
       },
+      sidebar: [
+        {
+          label: "1° anno",
+          items: [
+            {
+              label: "1° semestre",
+              collapsed: true,
+              items: [
+                {
+                  label: "Geometria e algebra lineare",
+                  autogenerate: {
+                    directory: "anno-1/semestre-1/geometria-e-algebra-lineare",
+                  },
+                },
+              ],
+            },
+            {
+              label: "2° semestre",
+              items: [
+                {
+                  label: "Analisi 2",
+                  autogenerate: { directory: "anno-1/semestre-2/analisi-2" },
+                },
+              ],
+            },
+          ],
+        },
+        {
+          label: "2° anno",
+          items: [
+            {
+              label: "1° semestre",
+              items: [
+                {
+                  label: "Fisica 2",
+                  autogenerate: { directory: "anno-2/semestre-1/fisica-2" },
+                },
+                {
+                  label: "Fondamenti di comunicazioni: reti",
+                  autogenerate: { directory: "anno-2/semestre-1/reti" },
+                },
+                {
+                  label:
+                    "Fondamenti di comunicazioni: elaborazione dei segnali",
+                  autogenerate: {
+                    directory: "anno-2/semestre-1/elaborazione-dei-segnali",
+                  },
+                },
+                {
+                  label: "Fondamenti di elettronica: reti logiche",
+                  autogenerate: { directory: "anno-2/semestre-1/reti-logiche" },
+                },
+                {
+                  label:
+                    "Sistemi di elaborazione: introduzione al machine learning",
+                  autogenerate: {
+                    directory:
+                      "anno-2/semestre-1/introduzione-al-machine-learning",
+                  },
+                },
+              ],
+            },
+          ],
+        },
+      ],
       social: [
         {
           href: "https://git.zarantonello.dev/davide/ice-notes",
