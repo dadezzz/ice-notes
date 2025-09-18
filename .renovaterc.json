@@ -9,6 +9,9 @@
     ":maintainLockFilesWeekly",
     ":semanticCommits"
   ],
+  "kubernetes": {
+    "managerFilePatterns": ["/kubernetes/.+\\.yaml$/"]
+  },
   "packageRules": [
     {
       "automerge": true,

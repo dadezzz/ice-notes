@@ -5,7 +5,6 @@ extends: default
 ignore: |
   dist/
   node_modules/
-  pnpm-lock.yaml
   .astro/
 rules:
   braces:
