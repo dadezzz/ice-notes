@@ -1,11 +1,10 @@
 # yaml-language-server: $schema=https://json.schemastore.org/yamllint.json
 
 extends: default
-# The lock file is not formatted or it would break each renovatebot commit.
 ignore: |
+  .astro/
   dist/
   node_modules/
-  .astro/
 rules:
   braces:
     forbid: non-empty
