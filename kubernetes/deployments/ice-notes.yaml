@@ -15,6 +15,7 @@ spec:
     spec:
       containers:
         - image: git.zarantonello.dev/davide/ice-notes:latest
+          imagePullPolicy: IfNotPresent
           name: ice-notes
           ports:
             - containerPort: 80

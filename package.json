@@ -1,11 +1,11 @@
 {
   "dependencies": {
     "@astrojs/starlight": "0.35.3",
-    "astro": "5.13.8",
+    "astro": "5.13.9",
     "katex": "0.16.22",
     "rehype-katex": "7.0.1",
     "remark-math": "6.0.0",
-    "sharp": "0.34.3",
+    "sharp": "0.34.4",
     "typescript": "5.9.2"
   },
   "devDependencies": {
