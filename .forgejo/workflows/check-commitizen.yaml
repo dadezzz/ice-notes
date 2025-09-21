@@ -6,7 +6,7 @@ jobs:
   check-commitizen:
     container:
       image: git.zarantonello.dev/infra/ci:latest
-    runs-on: srv-generic-amd64
+    runs-on: srv-generic
     steps:
       - run: cz check --message '${{ forge.event.pull_request.title }}'
 
