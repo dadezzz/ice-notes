@@ -26,6 +26,10 @@
         "prettier*",
         "wrangler"
       ]
+    },
+    {
+      "automerge": true,
+      "matchPackageNames": ["git.zarantonello.dev/davide/ice-notes"]
     }
   ]
 }
