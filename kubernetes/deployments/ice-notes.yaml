@@ -14,7 +14,7 @@ spec:
         apps.zarantonello.dev/namespace: ice-notes
     spec:
       containers:
-        - image: git.zarantonello.dev/davide/ice-notes:latest@sha256:2458c20eb372438c43702bf76d2f2c4fcac66e350beabd31a4fa147d9e505088
+        - image: git.zarantonello.dev/davide/ice-notes:v1.0.0
           imagePullPolicy: IfNotPresent
           name: ice-notes
           ports:

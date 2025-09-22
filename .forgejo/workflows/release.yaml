@@ -3,17 +3,20 @@ concurrency:
   group: ${{ forge.ref }}-${{ forge.job }}
 
 jobs:
-  build:
+  release:
     container:
       image: git.zarantonello.dev/infra/ci:latest@sha256:f0060036e948e91050ef5ad4ce5654c7433b46a7d9161fa511678b10c5c550a2
-    runs-on: srv-large
+    env:
+      GIT_AUTHOR_EMAIL: semantic-release@zarantonello.dev
+      GIT_AUTHOR_NAME: Semantic Release [bot]
+      GIT_COMMITTER_EMAIL: semantic-release@zarantonello.dev
+      GIT_COMMITTER_NAME: Semantic Release [bot]
+    runs-on: srv-generic
     steps:
       - uses: https://data.forgejo.org/actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
-      - run: buildah login git.zarantonello.dev -u ${{ secrets.REGISTRY_USER }} -p ${{ secrets.REGISTRY_PASSWORD }}
-      - run: buildah build --tag git.zarantonello.dev/davide/ice-notes:${{ forge.ref_name }} .
-      - run: buildah push git.zarantonello.dev/davide/ice-notes:${{ forge.ref_name }}
+      - run: bunx semantic-release
 
 "on":
   push:
-    tags:
-      - "**"
+    branches:
+      - main

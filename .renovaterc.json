@@ -4,7 +4,6 @@
   "extends": [
     "config:best-practices",
     "customManagers:biomeVersions",
-    "customManagers:dockerfileVersions",
     "customManagers:githubActionsVersions",
     ":maintainLockFilesWeekly",
     ":semanticCommits"
@@ -20,12 +19,18 @@
     },
     {
       "automerge": true,
-      "matchPackageNames": [
-        "@astro/check",
-        "@biomejs/biome",
-        "prettier*",
-        "wrangler"
-      ]
+      "matchFileNames": ["Dockerfile"],
+      "matchUpdateTypes": ["digest", "minor", "patch", "pin"],
+      "semanticCommitType": "fix"
+    },
+    {
+      "automerge": true,
+      "matchPackageNames": ["@astro/check", "@biomejs/biome", "prettier*"],
+      "matchUpdateTypes": ["digest", "minor", "patch", "pin"]
+    },
+    {
+      "matchPackageNames": ["typescript"],
+      "semanticCommitType": "chore"
     },
     {
       "automerge": true,
