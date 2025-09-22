@@ -1,5 +1,5 @@
 # hadolint ignore=DL3007
-FROM git.zarantonello.dev/infra/ci:latest AS builder
+FROM git.zarantonello.dev/infra/ci:latest@sha256:f0060036e948e91050ef5ad4ce5654c7433b46a7d9161fa511678b10c5c550a2 AS builder
 
 WORKDIR /srv
 
