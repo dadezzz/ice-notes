@@ -34,7 +34,7 @@
     },
     {
       "automerge": true,
-      "matchPackageNames": ["git.zarantonello.dev/davide/ice-notes"]
+      "matchPackageNames": ["git.zarantonello.dev/university/notes"]
     }
   ]
 }

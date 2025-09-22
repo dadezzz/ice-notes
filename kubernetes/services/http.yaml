@@ -8,5 +8,5 @@ spec:
       port: 80
       targetPort: http
   selector:
-    apps.zarantonello.dev/name: ice-notes
-    apps.zarantonello.dev/namespace: ice-notes
+    apps.zarantonello.dev/name: notes
+    apps.zarantonello.dev/namespace: university-notes

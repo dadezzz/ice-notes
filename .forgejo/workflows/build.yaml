@@ -10,8 +10,8 @@ jobs:
     steps:
       - uses: https://data.forgejo.org/actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
       - run: buildah login git.zarantonello.dev -u ${{ secrets.REGISTRY_USER }} -p ${{ secrets.REGISTRY_PASSWORD }}
-      - run: buildah build --tag git.zarantonello.dev/davide/ice-notes:${{ forge.ref_name }} .
-      - run: buildah push git.zarantonello.dev/davide/ice-notes:${{ forge.ref_name }}
+      - run: buildah build --tag git.zarantonello.dev/${{ forge.repository }}:${{ forge.ref_name }} .
+      - run: buildah push git.zarantonello.dev/${{ forge.repository }}:${{ forge.ref_name }}
 
 "on":
   push:

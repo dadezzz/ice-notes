@@ -1,12 +1,12 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: ice-notes
+  name: notes
 spec:
   interval: 5m
   path: kubernetes
   prune: true
   sourceRef:
     kind: GitRepository
-    name: ice-notes
-    namespace: ice-notes
+    name: notes
+    namespace: university-notes

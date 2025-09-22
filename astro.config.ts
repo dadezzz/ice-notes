@@ -11,7 +11,7 @@ export default defineConfig({
       description:
         "Notes taken while I attend software engineering lessons at the University of Trento.",
       editLink: {
-        baseUrl: "https://git.zarantonello.dev/davide/ice-notes/_edit/main",
+        baseUrl: "https://git.zarantonello.dev/university/notes/_edit/main",
       },
       sidebar: [
         {
@@ -80,7 +80,7 @@ export default defineConfig({
       ],
       social: [
         {
-          href: "https://git.zarantonello.dev/davide/ice-notes",
+          href: "https://git.zarantonello.dev/university/notes",
           icon: "seti:git",
           label: "Source code",
         },
@@ -95,5 +95,5 @@ export default defineConfig({
     rehypePlugins: [rehypeKatex],
     remarkPlugins: [remarkMath],
   },
-  site: "https://ice-notes.zarantonello.dev",
+  site: "https://notes.zarantonello.dev",
 });

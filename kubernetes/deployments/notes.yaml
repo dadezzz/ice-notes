@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ice-notes
+  name: notes
 spec:
   selector:
     matchLabels:
-      apps.zarantonello.dev/name: ice-notes
-      apps.zarantonello.dev/namespace: ice-notes
+      apps.zarantonello.dev/name: notes
+      apps.zarantonello.dev/namespace: university-notes
   template:
     metadata:
       labels:
-        apps.zarantonello.dev/name: ice-notes
-        apps.zarantonello.dev/namespace: ice-notes
+        apps.zarantonello.dev/name: notes
+        apps.zarantonello.dev/namespace: university-notes
     spec:
       containers:
-        - image: git.zarantonello.dev/davide/ice-notes:v1.0.0
+        - image: git.zarantonello.dev/university/notes:v1.1.0
           imagePullPolicy: IfNotPresent
-          name: ice-notes
+          name: notes
           ports:
             - containerPort: 80
               name: http
