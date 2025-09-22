@@ -1,3 +1,4 @@
+# hadolint ignore=DL3007
 FROM git.zarantonello.dev/infra/ci:latest AS builder
 
 WORKDIR /srv

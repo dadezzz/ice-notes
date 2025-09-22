@@ -1,0 +1,17 @@
+concurrency:
+  cancel-in-progress: true
+  group: ${{ forge.ref }}-${{ forge.job }}
+
+jobs:
+  check-hadolint:
+    container:
+      image: git.zarantonello.dev/infra/ci:latest
+    runs-on: srv-generic
+    steps:
+      - uses: https://data.forgejo.org/actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+      - run: for i in $(find . -name Dockerfile) ; do hadolint $i ; done
+
+"on":
+  pull_request:
+    branches:
+      - main
