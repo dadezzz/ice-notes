@@ -16,4 +16,4 @@ jobs:
 "on":
   push:
     tags:
-      - "**"
+      - v*
