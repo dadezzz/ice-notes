@@ -10,6 +10,7 @@ jobs:
     steps:
       - uses: https://data.forgejo.org/actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
       - env:
+          GH_TOKEN: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
           GIT_AUTHOR_EMAIL: semantic-release@zarantonello.dev
           GIT_AUTHOR_NAME: Semantic Release [bot]
           GIT_COMMITTER_EMAIL: semantic-release@zarantonello.dev
