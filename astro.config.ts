@@ -7,7 +7,10 @@ export default defineConfig({
   integrations: [
     starlight({
       credits: true,
-      customCss: ["katex/dist/katex.css"],
+      customCss: [
+        "katex/dist/katex.css",
+        "./src/styles/scroll-display-math.css",
+      ],
       description:
         "Notes taken while I attend software engineering lessons at the University of Trento.",
       editLink: {

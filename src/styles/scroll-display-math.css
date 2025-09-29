@@ -1,0 +1,5 @@
+/* Makes long math expressions scrollable horizontally. */
+.katex-display > .katex {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
