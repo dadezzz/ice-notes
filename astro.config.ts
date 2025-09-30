@@ -10,6 +10,7 @@ export default defineConfig({
       customCss: [
         "katex/dist/katex.css",
         "./src/styles/scroll-display-math.css",
+        "./src/styles/code-blocks.css",
       ],
       description:
         "Notes taken while I attend software engineering lessons at the University of Trento.",

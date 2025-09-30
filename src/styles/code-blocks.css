@@ -1,0 +1,12 @@
+.ec-line {
+  line-height: 1.5;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
+:root {
+  --sl-font-system-mono: "JetBrains Mono";
+}
