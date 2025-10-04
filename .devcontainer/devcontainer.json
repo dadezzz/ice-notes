@@ -4,7 +4,6 @@
       "extensions": [
         "astro-build.astro-vscode",
         "biomejs.biome",
-        "bradlc.vscode-tailwindcss",
         "esbenp.prettier-vscode",
         "ms-azuretools.vscode-containers",
         "redhat.vscode-yaml"
