@@ -1,12 +1,15 @@
-.ec-line {
-  line-height: 1.5;
-}
-
 @font-face {
-  font-family: "JetBrains Mono";
+  font-family: "JetBrains Mono Regular";
   src: url("../fonts/JetBrainsMono-Regular.woff2") format("woff2");
 }
 
 :root {
-  --sl-font-system-mono: "JetBrains Mono";
+  --sl-font-system-mono: "JetBrains Mono Regular";
+}
+
+code {
+  /* Makes lines connected vertically in fisica-2 circuits. */
+  line-height: 1.5;
+  /* Disable JetBrains Mono ligatures. */
+  font-variant-ligatures: none;
 }
