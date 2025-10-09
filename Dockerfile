@@ -8,7 +8,7 @@ RUN --mount=type=cache,sharing=locked,target=/root/.bun/install/cache bun instal
 COPY . ./
 RUN bun run build
 
-FROM docker.io/library/caddy:2.10.2-alpine@sha256:c94c06446b916bf8153f5128825acf7747205ecf815b3bacd27027ef5ad2f13a
+FROM docker.io/library/caddy:2.10.2-alpine@sha256:7d75b1294f73048155757377c38f05621a65c8df4f261077aa3091c9168ea53a
 
 COPY --from=builder /srv/dist /srv
 
