@@ -31,7 +31,16 @@ export default defineConfig({
     }),
   ],
   markdown: {
-    rehypePlugins: [rehypeKatex],
+    rehypePlugins: [
+      [
+        rehypeKatex,
+        {
+          macros: {
+            "\\sinc": "\\text{sinc}",
+          },
+        },
+      ],
+    ],
     remarkPlugins: [remarkMath],
   },
   site: "https://notes.zarantonello.dev",
