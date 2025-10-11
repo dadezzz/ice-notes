@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@astrojs/starlight": "0.36.0",
-    "astro": "5.14.3",
+    "astro": "5.14.4",
     "katex": "0.16.23",
     "rehype-katex": "7.0.1",
     "remark-math": "6.0.0",
