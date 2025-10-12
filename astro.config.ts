@@ -36,7 +36,15 @@ export default defineConfig({
         rehypeKatex,
         {
           macros: {
+            // Sinc function.
             "\\sinc": "\\text{sinc}",
+            // Derivative and partial derivative.
+            "\\dv": "\\frac{d #1}{d #2}",
+            "\\dvn": "\\frac{d^{#1} #2}{d #3^{#1}}",
+            "\\pdv": "\\frac{\\partial #1}{\\partial #2}",
+            "\\pdvn": "\\frac{\\partial^{#1} #2}{\\partial #3^{#1}}",
+            // Varios mathematical operators.
+            "\\opre": "\\text{Re}\\left[#1\\right]",
           },
         },
       ],
