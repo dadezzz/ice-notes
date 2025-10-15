@@ -43,13 +43,15 @@ export default defineConfig({
             "\\dvn": "\\frac{d^{#1} #2}{d #3^{#1}}",
             "\\pdv": "\\frac{\\partial #1}{\\partial #2}",
             "\\pdvn": "\\frac{\\partial^{#1} #2}{\\partial #3^{#1}}",
-            // Varios mathematical operators.
-            "\\opre": "\\text{Re}\\left[#1\\right]",
+            // Various operators.
+            "\\opRe": "\\text{Re}\\left[#1\\right]",
+            // Vorious functions.
+            "\\fnRect": "#1 \\Pi\\left(#2\\right)",
           },
         },
       ],
     ],
     remarkPlugins: [remarkMath],
   },
-  site: "https://notes.zarantonello.dev",
+  site: "https://ice-notes.zarantonello.dev",
 });
