@@ -16,7 +16,8 @@ jobs:
           GIT_AUTHOR_NAME: Semantic Release [bot]
           GIT_COMMITTER_EMAIL: semantic-release@zarantonello.dev
           GIT_COMMITTER_NAME: Semantic Release [bot]
-        run: semantic-release
+        # TMP: fix until bun catches up (currently its at 24.3.0).
+        run: bun --define:process.versions.node="'24.10.0'" x semantic-release
 
 "on":
   push:
