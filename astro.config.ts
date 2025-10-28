@@ -41,10 +41,6 @@ export default defineConfig({
             "\\dvn": "\\frac{d^{#1} #2}{d #3^{#1}}", // Arbitrary degree derivative.
             "\\pdv": "\\frac{\\partial #1}{\\partial #2}", // First degree partial derivative.
             "\\pdvn": "\\frac{\\partial^{#1} #2}{\\partial #3^{#1}}", // Arbitrary degree partial pure derivative.
-            "\\Xejw": "e^{j \\omega #1}", // Useful in signal processing and phisics 2.
-            "\\Xejpi": "e^{j 2 \\pi #1}", // Useful in signal processing and phisics 2.
-            "\\Xgauss":
-              "\\frac{1}{\\sqrt{2 \\pi #2}} e^{- \\frac{(#3 - #1)^2}{2 #2}}", // Gaussian, with args (mean, variance, free variable)
             "\\C": "\\mathbb{C}", // Complex numbers set.
             // Various operators.
             "\\Re": "\\text{Re}\\left[#1\\right]", // Real part of complex number.
