@@ -53,6 +53,9 @@ export default defineConfig({
             "\\fSign": "s\\left(#1\\right)", // Sign function.
             "\\fStep": "\\theta\\left(#1\\right)", // Step function.
             "\\fDelta": "\\delta\\left(#1\\right)", // Dirac delta function.
+            "\\fLog": "\\text{log}\\left(#1\\right)", // Logarithm.
+            "\\fLn": "\\text{log}\\left(#1\\right)", // Natural logarithm.
+            "\\fP": "\\mathbb{P}\\left(#1\\right)", // Probability.
             // Angular functions with adaptive parentheses.
             "\\fArctan": "\\text{arctan}\\left(#1\\right)",
             "\\fCos": "\\text{cos}\\left(#1\\right)",
