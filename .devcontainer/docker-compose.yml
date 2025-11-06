@@ -1,5 +1,5 @@
 services:
   workspace:
-    image: git.zarantonello.dev/infra/ci:v1.1.12@sha256:4c6103c2bc523eebf514c710b4ce3f52ff392ac903a4beab4ccb8512becfd19b
+    image: git.zarantonello.dev/infra/ci:v1.1.14@sha256:3d825d038ea6cbef0d50f75917953f47729b4ab08666c40cc7d89ceef6a89f7e
     volumes:
       - ..:/workspace:cached
