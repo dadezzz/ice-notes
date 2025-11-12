@@ -5,7 +5,7 @@ concurrency:
 jobs:
   check-hadolint:
     container:
-      image: git.zarantonello.dev/infra/ci:v1.1.16@sha256:d84c3d560d24d3aed63a85c93fc677ef5592cf218fe36346ce3e4813785f8a38
+      image: git.zarantonello.dev/infra/ci:v1.1.18@sha256:1193c505449ba7f463b186982d48fb4593e275635677288998b43b1736390f95
     runs-on: srv-generic
     steps:
       - uses: https://data.forgejo.org/actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
