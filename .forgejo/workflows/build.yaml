@@ -6,12 +6,19 @@ jobs:
   build:
     container:
       image: git.zarantonello.dev/infra/ci:v1.1.18@sha256:1193c505449ba7f463b186982d48fb4593e275635677288998b43b1736390f95
+    name: Build the container
     runs-on: srv-large
     steps:
-      - uses: https://data.forgejo.org/actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
-      - run: buildah login git.zarantonello.dev -u ${{ secrets.REGISTRY_USER }} -p ${{ secrets.REGISTRY_PASSWORD }}
-      - run: buildah build --tag git.zarantonello.dev/${{ forge.repository }}:${{ forge.ref_name }} .
-      - run: buildah push git.zarantonello.dev/${{ forge.repository }}:${{ forge.ref_name }}
+      - name: Clone the repository
+        uses: https://data.forgejo.org/actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+      - name: Login to the container registry
+        run: buildah login git.zarantonello.dev -u ${{ secrets.REGISTRY_USER }} -p ${{ secrets.REGISTRY_PASSWORD }}
+      - name: Build the container image
+        run: buildah build --tag git.zarantonello.dev/${{ forge.repository }}:${{ forge.ref_name }} .
+      - name: Push the container image
+        run: buildah push git.zarantonello.dev/${{ forge.repository }}:${{ forge.ref_name }}
+
+name: build.yaml
 
 "on":
   push:

@@ -6,9 +6,11 @@ jobs:
   release:
     container:
       image: git.zarantonello.dev/infra/ci:v1.1.18@sha256:1193c505449ba7f463b186982d48fb4593e275635677288998b43b1736390f95
+    name: Generate next relase tag
     runs-on: srv-generic
     steps:
-      - uses: https://data.forgejo.org/actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+      - name: Clone the repository
+        uses: https://data.forgejo.org/actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
         with:
           token: ${{ secrets.SEMANTIC_RELEASE_TOKEN }}
       - env:
@@ -16,7 +18,10 @@ jobs:
           GIT_AUTHOR_NAME: Semantic Release [bot]
           GIT_COMMITTER_EMAIL: semantic-release@zarantonello.dev
           GIT_COMMITTER_NAME: Semantic Release [bot]
+        name: Run semantic-release
         run: semantic-release
+
+name: release.yaml
 
 "on":
   push:

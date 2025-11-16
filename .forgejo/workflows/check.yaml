@@ -6,17 +6,30 @@ jobs:
   check:
     container:
       image: git.zarantonello.dev/infra/ci:v1.1.18@sha256:1193c505449ba7f463b186982d48fb4593e275635677288998b43b1736390f95
+    name: Checks
     runs-on: srv-large
     steps:
-      - uses: https://data.forgejo.org/actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
-      - uses: https://data.forgejo.org/actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+      - name: Clone the repository
+        uses: https://data.forgejo.org/actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+      - name: Restore the bun cache
+        uses: https://data.forgejo.org/actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
         with:
           key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lock') }}
           path: /root/.bun/install/cache
-      - run: bun install
-      - run: bun run prettier --check .
-      - run: bun run biome ci
-      - run: bun run check
+      - name: Install dependencies with bun
+        run: bun install
+      - name: Run prettier
+        run: bun run prettier --check .
+      - name: Run biome
+        run: bun run biome ci
+      - name: Run astro check
+        run: bun run check
+      - name: Build the website
+        run: bun run build
+      - name: Check for latex rendering errors
+        run: sh -c '! grep cc0000 dist/ -rl'
+
+name: check.yaml
 
 "on":
   pull_request:
