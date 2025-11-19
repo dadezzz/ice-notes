@@ -54,6 +54,7 @@ export default defineConfig({
             "\\fStep": "\\theta\\!\\left(#1\\right)", // Step function.
             "\\fDelta": "\\delta\\!\\left(#1\\right)", // Dirac delta function.
             "\\fLog": "\\text{log}\\!\\left(#1\\right)", // Logarithm.
+            "\\fLogn": "\\text{log}_{#1}\\!\\left(#2\\right)", // Logarithm.
             "\\fLn": "\\text{log}\\!\\left(#1\\right)", // Natural logarithm.
             "\\fP": "\\mathbb{P}\\!\\left(#1\\right)", // Probability.
             // Angular functions with adaptive parentheses.
