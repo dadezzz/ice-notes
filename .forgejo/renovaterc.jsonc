@@ -5,41 +5,41 @@
     "config:best-practices",
     "customManagers:biomeVersions",
     ":maintainLockFilesWeekly",
-    ":semanticCommits"
+    ":semanticCommits",
   ],
   "kubernetes": {
-    "managerFilePatterns": ["/kubernetes/.+\\.yaml$/"]
+    "managerFilePatterns": ["/kubernetes/.+\\.yaml$/"],
   },
   "packageRules": [
     {
       "automerge": true,
       "matchFileNames": [".devcontainer/**", ".forgejo/**"],
-      "matchUpdateTypes": ["digest", "minor", "patch", "pin"]
+      "matchUpdateTypes": ["digest", "minor", "patch", "pin"],
     },
     {
       "automerge": true,
       "matchFileNames": ["Dockerfile"],
       "matchUpdateTypes": ["digest", "minor", "patch", "pin"],
-      "semanticCommitType": "fix"
+      "semanticCommitType": "fix",
     },
     {
       "matchFileNames": ["Dockerfile"],
       "matchUpdateTypes": ["major"],
-      "semanticCommitType": "feat"
+      "semanticCommitType": "feat",
     },
     {
       "automerge": true,
       "matchPackageNames": ["@astro/check", "@biomejs/biome", "prettier*"],
-      "matchUpdateTypes": ["digest", "minor", "patch", "pin"]
+      "matchUpdateTypes": ["digest", "minor", "patch", "pin"],
     },
     {
       "matchPackageNames": ["typescript"],
-      "semanticCommitType": "chore"
+      "semanticCommitType": "chore",
     },
     {
       "automerge": true,
-      "matchPackageNames": ["git.zarantonello.dev/university/notes"]
-    }
+      "matchPackageNames": ["git.zarantonello.dev/university/notes"],
+    },
   ],
-  "prHourlyLimit": 4
+  "prHourlyLimit": 4,
 }
