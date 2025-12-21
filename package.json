@@ -18,8 +18,10 @@
     "build": "astro build",
     "check": "astro check",
     "dev": "astro dev",
-    "format": "prettier --write .",
-    "lint": "biome check"
+    "format:check": "biome format && prettier --check .",
+    "format:fix": "biome format --fix && prettier --write .",
+    "lint:check": "biome lint",
+    "lint:fix": "biome lint --fix"
   },
   "type": "module"
 }

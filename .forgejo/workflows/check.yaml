@@ -18,11 +18,11 @@ jobs:
           path: /root/.bun/install/cache
       - name: Install dependencies with bun
         run: bun install
-      - name: Run prettier
-        run: bun run prettier --check .
-      - name: Run biome
-        run: bun run biome ci
-      - name: Run astro check
+      - name: Run formatter
+        run: bun run format:check
+      - name: Run linter
+        run: bun run lint:check
+      - name: Run types and syntax check
         run: bun run check
       - name: Build the website
         run: bun run build

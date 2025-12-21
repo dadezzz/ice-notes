@@ -7,11 +7,7 @@ export default defineConfig({
   integrations: [
     starlight({
       credits: true,
-      customCss: [
-        "katex/dist/katex.css",
-        "./src/styles/code-blocks.css",
-        "./src/styles/math-blocks.css",
-      ],
+      customCss: ["katex/dist/katex.css", "./src/styles/code-blocks.css", "./src/styles/math-blocks.css"],
       description:
         "Notes taken while I attend Information, Communications and Electronics (ICE) engineering lessons at the University of Trento.",
       editLink: {
