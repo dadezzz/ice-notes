@@ -15,7 +15,7 @@ jobs:
         uses: https://data.forgejo.org/actions/cache@9255dc7a253b0ccc959486e2bca901246202afeb # v5.0.1
         with:
           key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
-          path: /root/.local/share/pnpm/store
+          path: ${{ forge.workspace }}/.pnpm-store
       - name: Install dependencies with pnpm
         run: pnpm install
       - name: Run formatter
