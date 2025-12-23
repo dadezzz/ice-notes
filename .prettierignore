@@ -6,3 +6,4 @@
 *.jsonc
 *.ts
 *.webmanifest
+pnpm-lock.yaml

@@ -1,12 +1,12 @@
-FROM git.zarantonello.dev/infra/ci:v1.1.37@sha256:8134ca5b4097214e1c6b7e9786e8fb171cd1e6a97a00360183c8275eb6a5fcbd AS builder
+FROM git.zarantonello.dev/infra/ci:v2.1.1@sha256:0f8ccf8091bc37ce10eb8b4db09abcb392a2cff4df319b6044eeacf8ba981a16 AS builder
 
 WORKDIR /srv
 
-COPY package.json bun.lock ./
-RUN --mount=type=cache,sharing=locked,target=/root/.bun/install/cache bun install -p
+COPY package.json pnpm-lock.yaml ./
+RUN --mount=type=cache,sharing=locked,target=/root/.pnpm-store pnpm install -p
 
 COPY . ./
-RUN bun run build
+RUN pnpm run build
 
 FROM docker.io/library/caddy:2.10.2-alpine@sha256:953131cfea8e12bfe1c631a36308e9660e4389f0c3dfb3be957044d3ac92d446
 
