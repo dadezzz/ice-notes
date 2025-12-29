@@ -24,7 +24,7 @@
     },
     {
       "automerge": true,
-      "matchPackageNames": ["@astro/check", "@biomejs/biome", "prettier*"],
+      "matchPackageNames": ["@astro/check", "@biomejs/biome", "prettier*", "pnpm"],
       "matchUpdateTypes": ["digest", "minor", "patch", "pin"]
     },
     {

@@ -1,0 +1,4 @@
+li::marker {
+  color: var(--sl-color-text-accent);
+  font-weight: bold;
+}

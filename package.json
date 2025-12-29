@@ -18,7 +18,8 @@
   "scripts": {
     "build": "astro build",
     "check": "astro check",
-    "dev": "astro dev",
+    "clean": "rm -rf node_modules/ dist/ .astro/",
+    "dev": "astro dev --host",
     "format:check": "biome format && prettier --check .",
     "format:fix": "biome format --fix && prettier --write .",
     "lint:check": "biome lint",
