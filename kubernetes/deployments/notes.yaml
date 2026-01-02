@@ -14,7 +14,7 @@ spec:
         apps.zarantonello.dev/namespace: university-notes
     spec:
       containers:
-        - image: git.zarantonello.dev/university/notes:v1.36.3@sha256:bbc42ae28c03455e93ffff51b3297707a252553cf5662c282115ab413ffc2796
+        - image: git.zarantonello.dev/university/notes:v1.37.0@sha256:332e3148bb576f709aed60fc8eff5ca2c9fa410580d729cf67643b98b9bb2e78
           imagePullPolicy: IfNotPresent
           name: notes
           ports:
