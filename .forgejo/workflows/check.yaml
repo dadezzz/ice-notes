@@ -10,7 +10,7 @@ jobs:
     runs-on: srv-large
     steps:
       - name: Clone the repository
-        uses: https://data.forgejo.org/actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
+        uses: https://data.forgejo.org/actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
       - name: Restore the pnpm cache
         uses: https://data.forgejo.org/actions/cache@9255dc7a253b0ccc959486e2bca901246202afeb # v5.0.1
         with:
