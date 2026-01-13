@@ -15,7 +15,6 @@ spec:
     spec:
       containers:
         - image: git.zarantonello.dev/university/notes:v1.37.7@sha256:325198ad49ee662c401986cc0aadf5bfb60f1940c8565b55e9a0cac0ceb81d25
-          imagePullPolicy: IfNotPresent
           name: notes
           ports:
             - containerPort: 80
