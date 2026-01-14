@@ -5,7 +5,7 @@ concurrency:
 jobs:
   build:
     container:
-      image: git.zarantonello.dev/infra/ci:v2.3.2@sha256:c063ef8c13e79da19caa49d1fb49da3e3f1d90acd19e2492ceddbca69d3a8309
+      image: git.zarantonello.dev/infra/ci:v2.3.3@sha256:cea8a53ec28792fa62c6802c3a627181ea95bbffba78248d5b3ab99c3b0462ca
     name: Build the container
     runs-on: srv-large
     steps:
