@@ -1,9 +1,0 @@
-apiVersion: source.toolkit.fluxcd.io/v1
-kind: GitRepository
-metadata:
-  name: notes
-spec:
-  interval: 20m
-  ref:
-    branch: main
-  url: http://http.forgejo.svc.k8s.zarantonello.dev/university/notes.git

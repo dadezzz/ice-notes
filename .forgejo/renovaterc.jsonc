@@ -2,9 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "assignees": ["davide"],
   "extends": ["config:best-practices", "customManagers:biomeVersions", ":maintainLockFilesWeekly", ":semanticCommits"],
-  "kubernetes": {
-    "managerFilePatterns": ["/kubernetes/.+\\.yaml$/"]
-  },
   "packageRules": [
     {
       "automerge": true,
@@ -28,6 +25,7 @@
       "matchUpdateTypes": ["digest", "minor", "patch", "pin"]
     },
     {
+      // No need to rebuild when typescript version changes.
       "matchPackageNames": ["typescript"],
       "semanticCommitType": "chore"
     },
