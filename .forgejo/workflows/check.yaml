@@ -5,7 +5,7 @@ concurrency:
 jobs:
   check:
     container:
-      image: git.zarantonello.dev/infra/ci:v2.3.25@sha256:1e92ca12e445a6e0c098d8690e671b46645647a80a27d7f129ca35440c40add0
+      image: git.zarantonello.dev/infra/ci:v2.3.26@sha256:520a81b417306382b0ae94b86711cca7c064a571639baea3f33afd3326abdb34
     name: Checks
     runs-on: srv-large
     steps:
