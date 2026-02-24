@@ -11,6 +11,7 @@
     {
       "files": ["*.astro"],
       "options": {
+        "printWidth": 120,
         "parser": "astro"
       }
     }

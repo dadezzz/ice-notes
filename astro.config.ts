@@ -3,6 +3,104 @@ import { defineConfig } from "astro/config";
 import rehypeKatex from "rehype-katex";
 import remarkMath from "remark-math";
 
+const sidebar = [
+  {
+    label: "First year",
+    items: [
+      {
+        label: "First semester",
+        items: [
+          {
+            label: "Analisi 1",
+            collapsed: true,
+            autogenerate: { directory: "1/1/145403" },
+          },
+          {
+            label: "Geometria e algebra lineare",
+            collapsed: true,
+            autogenerate: { directory: "1/1/145405" },
+          },
+        ],
+      },
+      {
+        label: "Second Semester",
+        items: [
+          {
+            label: "Analisi 2",
+            collapsed: true,
+            autogenerate: { directory: "1/2/140017" },
+          },
+          {
+            label: "Calcolo delle probabilità e statistica",
+            collapsed: true,
+            autogenerate: { directory: "1/2/145805" },
+          },
+        ],
+      },
+    ],
+  },
+  {
+    label: "Second year",
+    items: [
+      {
+        label: "First semester",
+        items: [
+          {
+            label: "Elaborazione dei segnali",
+            collapsed: true,
+            autogenerate: { directory: "1/2/146128-2" },
+          },
+          {
+            label: "Fisica 2",
+            collapsed: true,
+            autogenerate: { directory: "2/1/145821" },
+          },
+          {
+            label: "Introduzione al machine learning",
+            collapsed: true,
+            autogenerate: { directory: "2/1/146309-1" },
+          },
+          {
+            label: "Reti",
+            collapsed: true,
+            autogenerate: { directory: "2/1/146128-1" },
+          },
+          {
+            label: "Reti Logiche",
+            collapsed: true,
+            autogenerate: { directory: "2/1/146129-1" },
+          },
+        ],
+      },
+      {
+        label: "Second Semester",
+        items: [
+          {
+            label: "Calcolatori",
+            collapsed: true,
+            autogenerate: { directory: "2/2/146309-2" },
+          },
+          {
+            label: "Circuiti elettronici digitali",
+            collapsed: true,
+            autogenerate: { directory: "2/2/146129-2" },
+          },
+          {
+            label: "Operating systems",
+            collapsed: true,
+            autogenerate: { directory: "2/2/146147" },
+          },
+          {
+            label: "Organizzazione e gestione aziendale",
+            collapsed: true,
+            autogenerate: { directory: "2/2/145822" },
+          },
+        ],
+      },
+    ],
+  },
+];
+
 export default defineConfig({
   integrations: [
     starlight({
@@ -18,6 +116,7 @@ export default defineConfig({
       editLink: {
         baseUrl: "https://git.zarantonello.dev/university/notes/_edit/main",
       },
+      sidebar,
       social: [
         {
           href: "https://git.zarantonello.dev/university/notes",

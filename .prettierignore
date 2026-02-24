@@ -6,4 +6,6 @@
 *.jsonc
 *.ts
 *.webmanifest
+# Biome still has some issues with Astro files.
+# *.astro
 pnpm-lock.yaml
