@@ -25,13 +25,13 @@
       "matchUpdateTypes": ["digest", "minor", "patch", "pin"]
     },
     {
-      // No need to rebuild when typescript version changes.
-      "matchPackageNames": ["typescript"],
-      "semanticCommitType": "chore"
+      "automerge": true,
+      "matchPackageNames": ["git.zarantonello.dev/university/notes"]
     },
     {
       "automerge": true,
-      "matchPackageNames": ["git.zarantonello.dev/university/notes"]
+      "matchPackageNames": ["typescript", "git.zarantonello.dev/infra/ci"],
+      "semanticCommitType": "chore"
     }
   ],
   "prHourlyLimit": 4
