@@ -1,6 +1,6 @@
 services:
   workspace:
-    image: git.zarantonello.dev/infra/ci:v2.3.40@sha256:07f3c712b228f662040c2532bb6f7ee6374b4b2b12ffa953db29487b940fe795
+    image: git.zarantonello.dev/infra/ci:v2.3.41@sha256:61853158cdecda9d21208480069192898a123557fa6c76d91b78e109539f75e8
     ports:
       - 4321:4321
     volumes:
