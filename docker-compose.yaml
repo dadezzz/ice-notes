@@ -8,7 +8,7 @@ services:
       - NET_BIND_SERVICE
     cap_drop:
       - ALL
-    image: git.zarantonello.dev/university/notes:v2.6.3@sha256:86d4b9a50718084b5a4b2bda378921f8f1d327cf57771711bbf384f5ce6370aa
+    image: git.zarantonello.dev/university/notes:v2.6.4@sha256:27c36aff0429c2b9690c7e86463e24026957712393ac7d4e3eecc081ed6f2595
     labels:
       traefik.enable: true
       traefik.http.routers.university-notes.entrypoints: cloudflared
