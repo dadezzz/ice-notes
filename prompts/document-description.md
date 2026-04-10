@@ -1,10 +1,8 @@
-Read the contents of the file using `read_file`.
+Read the contents of the file using `read_file`, then update the yaml
+frontmatter to include a `description` field of ~120 characters. The content
+should be an outline of the arguments discussed in the file.
 
-Then update the yaml frontmatter to include a `description` field with a ~140
-characters summary of the file contents. It will be used in the description meta
-tag of an html page. You can't use latex formulas or special formatting.
-
-Write the description using `edit_file`. Keep the same language that was used
-for writing the document.
+Write the description using `edit_file` in the same language that was used for
+writing the document.
 
 The file is [FILE]
