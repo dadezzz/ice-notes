@@ -1,4 +1,7 @@
 ---
+// This page renders the lesson like Starlight would, but it sets the correct
+// lang for each one, as specified in the frontmatter
+
 import { getCollection, getEntry, render } from "astro:content";
 import StarlightPage, { type StarlightPageProps } from "@astrojs/starlight/components/StarlightPage.astro";
 import type { GetStaticPaths } from "astro";
@@ -24,10 +27,6 @@ const frontmatter: StarlightPageProps["frontmatter"] = rendered.remarkPluginFron
 const Content = rendered.Content;
 ---
 
-<!--
-    This page renders the lesson like Starlight would, but it sets the correct
-    lang for each one, as specified in the frontmatter
--->
 <StarlightPage {frontmatter} headings={rendered.headings} lang={lesson.data.lang}>
   <Content />
 </StarlightPage>
