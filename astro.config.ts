@@ -124,6 +124,7 @@ export default defineConfig({
         { tag: "link", attrs: { rel: "manifest", href: "/site.webmanifest" } },
         { tag: "meta", attrs: { name: "theme-color", content: "f6f7f9", media: "(prefers-color-scheme: light)" } },
         { tag: "meta", attrs: { name: "theme-color", content: "23263f", media: "(prefers-color-scheme: dark)" } },
+        { tag: "link", attrs: { rel: "sitemap", href: "/sitemap-index.xml" } },
       ],
       social: [
         {
