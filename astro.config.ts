@@ -122,6 +122,8 @@ export default defineConfig({
         { tag: "link", attrs: { rel: "icon", type: "image/x-icon", href: "/favicon.ico" } },
         { tag: "link", attrs: { rel: "apple-touch-icon", type: "image/png", href: "/apple-touch-icon.png" } },
         { tag: "link", attrs: { rel: "manifest", href: "/site.webmanifest" } },
+        { tag: "meta", attrs: { name: "theme-color", content: "f6f7f9", media: "(prefers-color-scheme: light)" } },
+        { tag: "meta", attrs: { name: "theme-color", content: "23263f", media: "(prefers-color-scheme: dark)" } },
       ],
       social: [
         {
