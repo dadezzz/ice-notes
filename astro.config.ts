@@ -104,7 +104,6 @@ const sidebar = [
 export default defineConfig({
   integrations: [
     starlight({
-      credits: true,
       customCss: [
         "katex/dist/katex.css",
         "./src/styles/code-blocks.css",
@@ -117,6 +116,13 @@ export default defineConfig({
         baseUrl: "https://git.zarantonello.dev/university/notes/_edit/main",
       },
       sidebar,
+      head: [
+        { tag: "link", attrs: { rel: "icon", type: "image/svg+xml", href: "/favicon.svg" } },
+        { tag: "link", attrs: { rel: "icon", type: "image/png", sizes: "96x96", href: "/favicon-96x96.png" } },
+        { tag: "link", attrs: { rel: "icon", type: "image/x-icon", href: "/favicon.ico" } },
+        { tag: "link", attrs: { rel: "apple-touch-icon", type: "image/png", href: "/apple-touch-icon.png" } },
+        { tag: "link", attrs: { rel: "manifest", href: "/site.webmanifest" } },
+      ],
       social: [
         {
           href: "https://git.zarantonello.dev/university/notes",
@@ -125,9 +131,6 @@ export default defineConfig({
         },
       ],
       title: "ICE notes",
-      logo: {
-        src: "./public/favicon.svg",
-      },
     }),
   ],
   markdown: {
