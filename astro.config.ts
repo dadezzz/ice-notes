@@ -111,7 +111,7 @@ export default defineConfig({
         "./src/styles/list-markers.css",
       ],
       description:
-        "Notes taken while I attend Information, Communications and Electronics (ICE) engineering lessons at the University of Trento.",
+        "Collection of course notes from the ICE (Information, Communications and Electronics) engineering program at the University of Trento.",
       editLink: {
         baseUrl: "https://git.zarantonello.dev/university/notes/_edit/main",
       },
