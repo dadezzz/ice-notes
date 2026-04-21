@@ -11,7 +11,7 @@ services:
     image: git.zarantonello.dev/university/notes:v2.10.7@sha256:3c2ace463f1bf28e0ddbcf2eb3015d08cb057985dcc77b67ad94e7f9b6fe46f1
     labels:
       traefik.enable: true
-      traefik.http.routers.university-notes.entrypoints: cloudflared
+      traefik.http.routers.university-notes.entrypoints: cloudflare
       traefik.http.routers.university-notes.rule: Host(`ice-notes.zarantonello.dev`)
       traefik.http.services.university-notes.loadbalancer.server.port: 80
     networks:
