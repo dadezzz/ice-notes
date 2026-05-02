@@ -1,7 +1,7 @@
 {
   "dependencies": {
     "@astrojs/starlight": "0.38.4",
-    "astro": "6.1.9",
+    "astro": "6.1.10",
     "katex": "0.16.45",
     "rehype-katex": "7.0.1",
     "remark-math": "6.0.0",
@@ -9,7 +9,7 @@
     "typescript": "6.0.3"
   },
   "devDependencies": {
-    "@astrojs/check": "0.9.8",
+    "@astrojs/check": "0.9.9",
     "@biomejs/biome": "2.4.13",
     "prettier": "3.8.3",
     "prettier-plugin-astro": "0.14.1"
