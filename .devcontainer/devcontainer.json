@@ -1,15 +1,4 @@
 {
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "astro-build.astro-vscode",
-        "biomejs.biome",
-        "esbenp.prettier-vscode",
-        "ms-azuretools.vscode-containers",
-        "redhat.vscode-yaml"
-      ]
-    }
-  },
   "dockerComposeFile": "docker-compose.yml",
   "service": "workspace",
   "workspaceFolder": "/workspace"
