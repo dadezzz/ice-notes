@@ -11,7 +11,9 @@ services:
     image: git.zarantonello.dev/university/notes:v2.14.0@sha256:c3eb48b2779431570bcf532e9e88b4f2162bee1cf299de86b3aa817373ce6a12
     labels:
       traefik.enable: true
+      traefik.http.middlewares.university-notes-cors.headers.accesscontrolalloworiginlist: https://metrics.zarantonello.dev
       traefik.http.routers.university-notes.entrypoints: cloudflare
+      traefik.http.routers.university-notes.middlewares: university-notes-cors
       traefik.http.routers.university-notes.rule: Host(`ice-notes.zarantonello.dev`)
       traefik.http.services.university-notes.loadbalancer.server.port: 80
     networks:

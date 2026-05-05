@@ -130,7 +130,7 @@ export default defineConfig({
           tag: "script",
           attrs: {
             defer: true,
-            src: "https://metrics.zarantonello.dev/t/script",
+            src: "https://metrics.zarantonello.dev/script.js",
             "data-website-id": "cbc8ce81-6981-40c5-af36-08d8639742d5",
             // Use only when deployed.
             "data-domains": "ice-notes.zarantonello.dev",
