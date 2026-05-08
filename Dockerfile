@@ -1,4 +1,4 @@
-FROM git.zarantonello.dev/infra/ci:v2.3.80@sha256:252a8048eb487dbd12743864a5ee6488a1d7ebb9e26aeac3420915b87caeb8b7 AS builder
+FROM git.zarantonello.dev/infra/ci:v2.3.81@sha256:2850365d8bac3a714a43611df7451a8cfabe1269776b3dfcc5fbbdef1962d7fc AS builder
 
 WORKDIR /srv
 
