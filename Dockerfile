@@ -2,7 +2,7 @@ FROM git.zarantonello.dev/infra/ci:v2.3.84@sha256:f3ac24e390c2f1a8b2525aff6aac0d
 
 WORKDIR /srv
 
-COPY package.json pnpm-lock.yaml ./
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
 RUN --mount=type=cache,sharing=locked,target=/root/.local/share/pnpm/store pnpm install -p
 
 COPY . ./
