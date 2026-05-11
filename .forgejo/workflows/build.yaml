@@ -7,7 +7,7 @@ jobs:
     container:
       image: git.zarantonello.dev/infra/ci:v2.3.84@sha256:f3ac24e390c2f1a8b2525aff6aac0d1341ff33bc34827ccec37bc94f28db7196
     name: Build the container
-    runs-on: srv-large
+    runs-on: srv-generic
     steps:
       - name: Clone the repository
         uses: https://data.forgejo.org/actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
