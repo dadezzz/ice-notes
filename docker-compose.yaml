@@ -8,7 +8,7 @@ services:
       - NET_BIND_SERVICE
     cap_drop:
       - ALL
-    image: git.zarantonello.dev/university/notes:v2.15.4@sha256:48a2743688c8e05109bb6e888c85b2c5dffc1cc2e23bed683cd58de932d950ec
+    image: git.zarantonello.dev/university/notes:v2.15.5@sha256:4eef9cbd22b7d3f7e6a3af51a495a81419a04df90da236c46e54fabe755bf0a7
     labels:
       traefik.enable: true
       traefik.http.middlewares.university-notes-cors.headers.accesscontrolalloworiginlist: https://metrics.zarantonello.dev
