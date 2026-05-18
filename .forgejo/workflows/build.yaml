@@ -14,9 +14,7 @@ jobs:
       - name: Login to the container registry
         run: docker login git.zarantonello.dev -u ${{ secrets.REGISTRY_USER }} -p ${{ secrets.REGISTRY_PASSWORD }}
       - name: Build the container image
-        run: docker build --tag git.zarantonello.dev/${{ forge.repository }}:${{ forge.ref_name }} .
-      - name: Push the container image
-        run: docker push git.zarantonello.dev/${{ forge.repository }}:${{ forge.ref_name }}
+        run: docker build --push --tag git.zarantonello.dev/${{ forge.repository }}:${{ forge.ref_name }} .
 
 name: build.yaml
 
