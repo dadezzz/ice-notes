@@ -104,6 +104,16 @@ Alternatively, follow the manual installation steps below.
 - Adding missing course notes;
 - Suggesting new features or improvements;
 
+## AI
+
+Content is human-written and AI-reviewed. You can find some useful prompt
+templates in the `.pi/prompts/` directory.
+
+- `.pi/prompts/document-review.md`: Review grammar and latex in the given
+  document.
+- `.pi/prompts/document-description.md`: Generate title and description metadata
+  for the given document.
+
 ## License
 
 This work is licensed under a
