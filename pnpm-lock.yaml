@@ -15,8 +15,8 @@ importers:
         specifier: 6.3.3
         version: 6.3.3(@types/node@24.12.4)(rollup@4.60.4)(yaml@2.9.0)
       katex:
-        specifier: 0.16.46
-        version: 0.16.46
+        specifier: 0.16.47
+        version: 0.16.47
       rehype-katex:
         specifier: 7.0.1
         version: 7.0.1
@@ -1333,6 +1333,10 @@ packages:
 
   katex@0.16.46:
     resolution: {integrity: sha512-WHy4Coo+bGZyH7NwJKHkS04YFsFcarWbAEOAC3EMndzdN6VSZqklLLIgfxzyaW9jDoeGYJX9SWbJPKpecox0Uw==}
+    hasBin: true
+
+  katex@0.16.47:
+    resolution: {integrity: sha512-Eeo8Ys1doU1z+x8AZsPpQu+p/QcZBI5PeOo7QGQdy2x2m0MU/hYagBbGOmXwr5KVbEfVuWv9LpnQWeehogurjg==}
     hasBin: true
 
   kleur@4.1.5:
@@ -3611,6 +3615,10 @@ snapshots:
   jsonc-parser@3.3.1: {}
 
   katex@0.16.46:
+    dependencies:
+      commander: 8.3.0
+
+  katex@0.16.47:
     dependencies:
       commander: 8.3.0
 
