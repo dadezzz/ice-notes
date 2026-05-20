@@ -1,7 +1,11 @@
 services:
   workspace:
+    entrypoint:
+      - sleep
+      - infinity
     image: git.zarantonello.dev/infra/ci:v3.0.0@sha256:6b5b5f8323cbc5906cd4ccf5ff53e0e227beb2b3f339a692bb125af464deab60
     ports:
       - 4321:4321
     volumes:
-      - ..:/workspace:cached
+      - ..:/workspace:z,cached
+    working_dir: /workspace
